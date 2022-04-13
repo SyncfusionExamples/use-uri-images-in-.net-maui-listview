@@ -14,14 +14,14 @@ namespace ListViewMaui
     {
         #region Properties
 
-        public ObservableCollection<Contacts> contactsinfo { get; set; }
+        public ObservableCollection<Contacts> ContactsInfo { get; set; }
         #endregion
 
         #region Constructor
 
         public ContactsViewModel()
         {
-            contactsinfo = new ObservableCollection<Contacts>();
+            ContactsInfo = new ObservableCollection<Contacts>();
             GenerateInfo();
         }
 
@@ -32,7 +32,7 @@ namespace ListViewMaui
             {
                 var contact = new Contacts(CustomerNames[i], r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
                 contact.ContactImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png"; //Your Url goes here
-                contactsinfo.Add(contact);
+                ContactsInfo.Add(contact);
             }
         }
 

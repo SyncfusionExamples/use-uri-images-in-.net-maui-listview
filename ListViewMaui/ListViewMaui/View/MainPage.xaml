@@ -10,7 +10,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <ListView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding contactsinfo}">
+        <ListView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding ContactsInfo}">
             <ListView:SfListView.ItemTemplate >
                 <DataTemplate>
                     <Frame Padding="2" Margin="2" HasShadow="False" BorderColor="LightGray">
